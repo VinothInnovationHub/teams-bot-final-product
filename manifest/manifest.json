@@ -2,13 +2,13 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
   "version": "1.0.3",
-  "id": "<this bot's app/client id, same as botId below>",
+  "id": "ae075e86-a4d6-4e37-bf92-2b8d437e6892",
   "packageName": "com.otcagent.teamsbotfinalproduct",
   "developer": {
     "name": "OTC Agent",
-    "websiteUrl": "https://<your-function-app>.azurewebsites.net",
-    "privacyUrl": "https://<your-function-app>.azurewebsites.net/privacy",
-    "termsOfUseUrl": "https://<your-function-app>.azurewebsites.net/terms"
+    "websiteUrl": "https://func-otc-bot-final-0efu4i.azurewebsites.net",
+    "privacyUrl": "https://func-otc-bot-final-0efu4i.azurewebsites.net/privacy",
+    "termsOfUseUrl": "https://func-otc-bot-final-0efu4i.azurewebsites.net/terms"
   },
   "name": {
     "short": "OTC Assistant (Final)",
@@ -27,13 +27,13 @@
     {
       "entityId": "newOtcRequest",
       "name": "New OTC Request",
-      "contentUrl": "https://<your-function-app>.azurewebsites.net/api/form",
+      "contentUrl": "https://func-otc-bot-final-0efu4i.azurewebsites.net/api/form",
       "scopes": ["personal"]
     }
   ],
   "bots": [
     {
-      "botId": "<this bot's app/client id, same as id above>",
+      "botId": "ae075e86-a4d6-4e37-bf92-2b8d437e6892",
       "scopes": ["personal"],
       "supportsFiles": false,
       "isNotificationOnly": true
@@ -41,7 +41,7 @@
   ],
   "permissions": ["identity"],
   "validDomains": [
-    "<your-function-app>.azurewebsites.net",
+    "func-otc-bot-final-0efu4i.azurewebsites.net",
     "res.cdn.office.net"
   ]
 }
