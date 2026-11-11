@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.3",
+  "id": "<this bot's app/client id, same as botId below>",
+  "packageName": "com.otcagent.teamsbotfinalproduct",
+  "developer": {
+    "name": "OTC Agent",
+    "websiteUrl": "https://<your-function-app>.azurewebsites.net",
+    "privacyUrl": "https://<your-function-app>.azurewebsites.net/privacy",
+    "termsOfUseUrl": "https://<your-function-app>.azurewebsites.net/terms"
+  },
+  "name": {
+    "short": "OTC Assistant (Final)",
+    "full": "OTC Assistant (Final Product)"
+  },
+  "description": {
+    "short": "Submit and track Offer-to-Close requests with live status",
+    "full": "Submit customer details and documents for an Offer-to-Close draft, track live progress (Request Created -> In Review -> AI Processing -> Document Generated -> Completed) in a side panel, search past requests by ID or customer name, and get notified in Teams the moment your draft is ready."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#5B5FC7",
+  "staticTabs": [
+    {
+      "entityId": "newOtcRequest",
+      "name": "New OTC Request",
+      "contentUrl": "https://<your-function-app>.azurewebsites.net/api/form",
+      "scopes": ["personal"]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "<this bot's app/client id, same as id above>",
+      "scopes": ["personal"],
+      "supportsFiles": false,
+      "isNotificationOnly": true
+    }
+  ],
+  "permissions": ["identity"],
+  "validDomains": [
+    "<your-function-app>.azurewebsites.net",
+    "res.cdn.office.net"
+  ]
+}
