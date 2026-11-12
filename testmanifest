@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.3",
+  "id": "131fedbf-a9ef-4c64-8295-cbff1bd1e109",
+  "developer": {
+    "name": "Nationwide",
+    "websiteUrl": "https://www.nationwide.co.uk",
+    "privacyUrl": "https://www.nationwide.co.uk/privacy",
+    "termsOfUseUrl": "https://www.nationwide.co.uk/terms"
+  },
+  "name": {
+    "short": "OTC Request",
+    "full": "OTC Request"
+  },
+  "description": {
+    "short": "Create OTC requests and upload supporting documents.",
+    "full": "Enter customer details, upload the Investment Memo and Financial Model, and generate a draft OTC."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#004680",
+  "bots": [
+    {
+      "botId": "131fedbf-a9ef-4c64-8295-cbff1bd1e109",
+      "scopes": [
+        "personal"
+      ],
+      "supportsFiles": true,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "token.botframework.com",
+    "appgateway-consumer.dev.nbsaiplatform.co.uk"
+  ]
+}
